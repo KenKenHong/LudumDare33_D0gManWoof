@@ -1,0 +1,110 @@
+fileFormatVersion: 2
+guid: cb203d36a556c6e498f99ca18daa33c4
+timeCreated: 1440222805
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: Head
+    21300002: UpperBody
+    21300004: Leg
+    21300006: Tail
+    21300008: LowerBody
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: Head
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 184
+        width: 64
+        height: 69
+      alignment: 9
+      pivot: {x: .513110459, y: .208149791}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: UpperBody
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 164
+        width: 59
+        height: 88
+      alignment: 9
+      pivot: {x: .499999881, y: .399883628}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Leg
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 195
+        width: 21
+        height: 49
+      alignment: 9
+      pivot: {x: .519977391, y: .859600782}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: Tail
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 74
+        width: 52
+        height: 98
+      alignment: 9
+      pivot: {x: .774310827, y: .898129702}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: LowerBody
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 98
+        width: 54
+        height: 50
+      alignment: 9
+      pivot: {x: .476692349, y: .760111094}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
