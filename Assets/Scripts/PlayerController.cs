@@ -5,7 +5,7 @@ using System;
 public class PlayerController : MonoBehaviour
 {
     public AudioClip howl;
-    public AudioClip footsteps;
+    public AudioSource footsteps;
     public float movespeed = 1.0f;
     public float turnspeed = 5f;
 
@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         hash = GameObject.FindGameObjectWithTag("GameController").GetComponent<HashIDs>();
         rb = GetComponent<Rigidbody>();
+		footsteps = GetComponent<AudioSource>();
     }
 
     void FixedUpdate()
@@ -38,18 +39,34 @@ public class PlayerController : MonoBehaviour
         if(Input.GetKey(KeyCode.W))
         {
             movement += transform.up;
+			if(!footsteps.isPlaying)
+			{
+				footsteps.Play();
+			}
         }
         if (Input.GetKey(KeyCode.S))
         {
             movement -= transform.up;
+			if(!footsteps.isPlaying)
+			{
+				footsteps.Play();
+			}
         }
         if (Input.GetKey(KeyCode.A))
         {
             movement -= transform.right;
+			if(!footsteps.isPlaying)
+			{
+				footsteps.Play();
+			}
         }
         if (Input.GetKey(KeyCode.D))
         {
             movement += transform.right;
+			if(!footsteps.isPlaying)
+			{
+				footsteps.Play();
+			}
         }
 
         movement = movement.normalized * movespeed * Time.deltaTime;
