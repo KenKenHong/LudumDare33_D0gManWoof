@@ -14,11 +14,13 @@ public class LastPlayerPosition : MonoBehaviour
     private DangerFilter danger;
     private Outline outline;
     private AudioSource dangerAudio;
+    private bool sighted;
 	
     void Awake()
     {
         danger = GameObject.FindGameObjectWithTag("DangerFilter").GetComponent<DangerFilter>();
         outline = GameObject.FindGameObjectWithTag("Outline").GetComponent<Outline>();
+        sighted = false;
     }
 
     void Update()
@@ -33,10 +35,16 @@ public class LastPlayerPosition : MonoBehaviour
 
         if (position != resetPosition)
         {
-            outline.alpha = outlineMaxIntensity;
             outline.transform.position = player.position;
             outline.transform.rotation = player.rotation;
+            sighted = true;
         }
+        else
+            if (sighted)
+            {
+                outline.alpha = outlineMaxIntensity;
+                sighted = false;
+            }
 
         outline.alpha = Mathf.Lerp(outline.alpha, outlineMinIntensity, fadeSpeed * Time.deltaTime);
     }
