@@ -20,7 +20,7 @@ public class EnemySight : MonoBehaviour
 		nav = GetComponent<NavMeshAgent>();
         col = GetComponent<SphereCollider>();
         anim = GetComponent<Animator>();
-        lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
+        //lastPlayerSighting = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<LastPlayerSighting>();
         //player = GameObject.FindGameObjectWithTag(Tags.player);
         playerAnim = player.GetComponent<Animator>();
         //hash = GameObject.FindGameObjectWithTag(Tags.gameController).GetComponent<HashIDs>();
